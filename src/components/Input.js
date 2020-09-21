@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default function Input(){
-  return(
-      <div>
-          Input
-      </div>
+export default function Input() {
+  return (
+    <div>
+      <input type='text' />
+      <button>Add</button>
+      <button>Clear</button>
+    </div>
   );
 }
