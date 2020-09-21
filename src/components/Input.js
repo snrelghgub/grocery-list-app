@@ -1,11 +1,12 @@
 import React from 'react';
 
-export default function Input() {
+export default function Input(props) {
+  const [item, setUserItem] = React.useState('');
   return (
-    <form>
-      <input type='text' />
-      <button type='submit'>Add</button>
+    <div>
+      <input type='text' onChange={(e) => setUserItem(e.target.value)} />
+      <button onClick={() => props.transferItem(item)}>Add</button>
       <button>Clear</button>
-    </form>
+    </div>
   );
 }
