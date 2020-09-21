@@ -6,7 +6,13 @@ export default function Input(props) {
     <div>
       <input type='text' onChange={(e) => setUserItem(e.target.value)} />
       <button onClick={() => props.transferItem(item)}>Add</button>
-      <button>Clear</button>
+      <button
+        onClick={() => {
+          props.clearList();
+        }}
+      >
+        Clear
+      </button>
     </div>
   );
 }

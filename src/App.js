@@ -11,14 +11,15 @@ function App() {
   //function to handle the transfer of a new item
   let transferItem = (item) => {
     //condition - add
-    console.log(`before:${groceryList}`);
+    // console.log(`before:${groceryList}`);
     setGroceryList([...groceryList, item]);
-    console.log(`after:${groceryList}`);
+    // console.log(`after:${groceryList}`);
   };
 
   //function to handle clear button functionality
   let clearList = () => {
     //clear groceryList array
+    setGroceryList([]);
   };
 
   //effectHook, each time there is change & update in state of the array
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <Input transferItem={transferItem} />
+      <Input transferItem={transferItem} clearList={clearList} />
       <List />
       <Footer />
     </div>
