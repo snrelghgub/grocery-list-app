@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Input() {
   return (
-    <div>
+    <form>
       <input type='text' />
-      <button>Add</button>
+      <button type='submit'>Add</button>
       <button>Clear</button>
-    </div>
+    </form>
   );
 }
