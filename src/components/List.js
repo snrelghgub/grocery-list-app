@@ -1,9 +1,14 @@
 import React from 'react'
 
-export default function List(){
+export default function List(props){
+  let temp=[]; 
+  temp = props.groceryList.map((elem)=><li>{elem}</li>);
+
   return(
       <div>
-          List
+          <ul>
+            {temp}
+          </ul>
       </div>
   );
 }
