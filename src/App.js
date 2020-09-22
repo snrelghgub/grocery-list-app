@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import Input from './components/Input';
 import List from './components/List';
@@ -27,7 +27,7 @@ function App() {
   //effectHook, each time there is change & update in state of the array
   //>>>
   
-  
+  /*
   useEffect(()=>{
     //make it display the items 
     //let temp=[]; 
@@ -37,7 +37,7 @@ function App() {
     //setListOfItems(temp); 
 
   },[groceryList]);
-
+  */
 
   return (
     <div className='App'>
