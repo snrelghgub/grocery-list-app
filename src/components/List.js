@@ -5,8 +5,8 @@ export default function List(props) {
   temp = props.groceryList.map((elem) => <li>{elem}</li>);
 
   return (
-    <div>
-      <ul>{temp}</ul>
+    <div className='list'>
+      <ul className='list--items'>{temp}</ul>
     </div>
   );
 }

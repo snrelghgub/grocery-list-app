@@ -7,15 +7,14 @@ import Footer from './components/Footer';
 
 function App() {
   const [groceryList, setGroceryList] = useState([]);
-  //const [listOfItems, setListOfItems] = useState(null); 
+  //const [listOfItems, setListOfItems] = useState(null);
 
   //function to handle the transfer of a new item
   let transferItem = (item) => {
     //condition - add
-    
+
     setGroceryList([...groceryList, item]);
     // console.log(`after:${groceryList}`);
-
   };
 
   //function to handle clear button functionality
@@ -26,7 +25,7 @@ function App() {
 
   //effectHook, each time there is change & update in state of the array
   //>>>
-  
+
   /*
   useEffect(()=>{
     //make it display the items 
@@ -41,9 +40,11 @@ function App() {
 
   return (
     <div className='App'>
-      <Header />
-      <Input transferItem={transferItem} clearList={clearList} />
-      <List groceryList={groceryList}/>
+      <div className='header'>
+        <Header />
+        <Input transferItem={transferItem} clearList={clearList} />
+      </div>
+      <List groceryList={groceryList} />
       <Footer />
     </div>
   );

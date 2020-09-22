@@ -1,3 +1,87 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  text-align-last: center;
+  width: 100vw;
+
+  // font-family: 'open-sans';
+
+  #root {
+    height: 100vh;
+    overflow: auto;
+
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(110, 230, 230);
+      padding: 0.6rem 0;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+      }
+
+      input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header--input {
+        height: 1.6rem;
+        width: 16rem;
+        letter-spacing: 1.6px;
+      }
+    }
+
+    .list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 1.6rem;
+      height: 70%;
+      margin: 6.1rem 0 60px 0;
+
+      .list--items {
+        height: 100%;
+        padding: 1.5rem 0;
+
+        li {
+          padding: 0.1rem;
+          border-bottom: 0.2px solid rgb(141, 139, 139);
+        }
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(24, 126, 126);
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        padding: 0 8px;
+      }
+    }
+  }
 }
