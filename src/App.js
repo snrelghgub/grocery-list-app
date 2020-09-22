@@ -4,6 +4,9 @@ import Header from './components/Header';
 import Input from './components/Input';
 import List from './components/List';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+
 
 function App() {
   const [groceryList, setGroceryList] = useState([]);
@@ -40,12 +43,14 @@ function App() {
 
   return (
     <div className='App'>
+    <Container fluid>
       <div className='header'>
         <Header />
         <Input transferItem={transferItem} clearList={clearList} />
       </div>
       <List groceryList={groceryList} />
       <Footer />
+    </Container>
     </div>
   );
 }
